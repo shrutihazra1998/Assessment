@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function register(){
+var name= document.getElementById('name');
+    var email = document.getElementById('email');
+    var password = document.getElementById('password');
+    var phone= document.getElementById('phone');
+    var lowerCase = /[a-z]/g;
+    var upperCase = /[A-Z]/g;
+    var numbers = /[0-9]/g;
+    var special=/[!@#$%^&*]/g;
+    if(name.value.length==0){
+        alert('Please fill in name');
+    }
+    else if(name.value.length<5){
+        alert('Please fill in name of 5 char');
+    }
+    else if(name.value.length>15){
+        alert('Max length of name is 15 char');
+    }
+    else if(email.value.length == 0){
+        alert('Please fill in email');
+
+    }else if(phone.value.length<10){
+        alert("Invalid phone number");
+
+    }else if(phone.value.length==0){
+        alert("Please fill in phone number");
+    }
+    else if(password.value.length == 0){
+        alert('Please fill in password');
+
+    }else if(!password.value.match(numbers)){
+        alert('please add a number in password');
+
+    }else if(!password.value.match(upperCase)){
+        alert('please add a uppercase letter in password');
+
+    }else if(!password.value.match(lowerCase)){
+        alert('please add a lowercase letter in password');
+
+    }else if(!password.value.match(special)){
+        alert('please add a special char in password');
+    }else{
+        alert('Your have been registered');
+    }
+    }
+   </script>
+</head>
+<body>
+    <div>
+        <form >
+    
+            <b>Register here</b>
+            <br>
+            <br>
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+    
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Username" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="number" id="phone" required>
+    
+            <label for="password">Password</label>
+            <input type="password"
+                   id= "password"
+                   placeholder="Password" required>
+
+    
+    <br>
+    <br>
+            <input type="submit" value="Register" onclick="register()">
+    
+        </form>
+        <br>
+        <br>
+        <br>
+    </div>
+</body>
+</html>
