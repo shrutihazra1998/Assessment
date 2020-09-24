@@ -1,0 +1,24 @@
+[{
+    "name":"Oyo", 
+    "city":"Mumbai",
+    "type":"veg",
+    "cuisine":["Indian","Chinese"]
+},
+{
+    "name":"Treebo", 
+    "city":"Jaipur",
+    "type":"nonveg",
+    "cuisine":["Indian", "Italian"] 
+},
+{
+    "name":"Country Inn", 
+    "city":"Mysore",
+    "type":"veg",
+    "cuisine":["Italian", "Chinese"] 
+},
+{
+    "name":"Blu Plaza", 
+    "city":"Kolkata",
+    "type":"nonveg",
+    "cuisine":["Thai", "Chinese" ]
+}]
